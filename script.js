@@ -15,10 +15,7 @@ document.addEventListener("DOMContentLoaded",()=>
 
 			form.appendChild(ele);
 			
-			let exist=document.getElementById("existing");
-		    exist.addEventListener("click",()=>{
-			alert(`Logged in as ${localStorage.getItem("username")}`);
-		    })
+			
 		}
 
 		let form=document.getElementById("f1");
@@ -46,5 +43,8 @@ document.addEventListener("DOMContentLoaded",()=>
                
 			})
 
-		
+		let exist=document.getElementById("existing");
+		    exist.addEventListener("click",()=>{
+			alert(`Logged in as ${localStorage.getItem("username")}`);
+		    })
 	})
