@@ -7,13 +7,10 @@ document.addEventListener("DOMContentLoaded",()=>
 		{
 			
             let sb=document.getElementById("submit");
-			let ele=document.createElement("input");
 
-			ele.setAttribute("id","existing");
-			ele.setAttribute("type","button");
-			ele.setAttribute("value","Login as existing user.");
+			sb.setAttribute("id","existing");
+			sb.setAttribute("value","Login as existing user.");
 
-			sb.replaceWith(ele);
 
 
 			let exist=document.getElementById("existing");
