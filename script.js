@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded",()=>
 			
 			let exist=document.getElementById("existing");
 		    exist.addEventListener("click",()=>{
-			alert(`Logged in as ${localStorage.getItem("username")}.`);
+			alert(`Logged in as ${localStorage.getItem("username")}`);
 		    })
 		}
 
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded",()=>
 				 localStorage.removeItem("password",password);	
 				 }
 				}
-				alert(`Logged in as ${username}.`)
+				alert(`Logged in as ${username}`)
                
 			})
 
