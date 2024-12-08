@@ -5,15 +5,15 @@ document.addEventListener("DOMContentLoaded",()=>
 	{
 		if(localStorage.getItem("username"))
 		{
-			let form=document.getElementById("f1");
-
+			
+            let sb=document.getElementById("submit");
 			let ele=document.createElement("input");
 
 			ele.setAttribute("id","existing");
 			ele.setAttribute("type","button");
 			ele.setAttribute("value","Login as existing user.");
 
-			form.appendChild(ele);
+			sb.replaceWith(ele);
 
 
 			let exist=document.getElementById("existing");
