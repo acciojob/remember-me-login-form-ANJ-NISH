@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded",()=>
 			{
 				e.preventDefault();
 				let cb=document.getElementById("checkbox");
+			     let username=document.getElementById("username").value;
 				if(cb.checked)
 				{
-					let username=document.getElementById("username").value;
 					let password=document.getElementById("password").value;
 					localStorage.setItem("username",username);
 					localStorage.setItem("password",password);
@@ -42,7 +42,8 @@ document.addEventListener("DOMContentLoaded",()=>
 				 localStorage.removeItem("password",password);	
 				 }
 				}
-				alert(`Logged in as ${localStorage.getItem("username")}.`);
+				alert(`Logged in as ${username}.`)
+               
 			})
 
 		
